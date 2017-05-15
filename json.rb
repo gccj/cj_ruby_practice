@@ -10,11 +10,10 @@ def print_hash_array(hash_array)
 end
 
 hash_object.each do |key, value|
+  puts key.to_s
   if value.is_a? Array
-    puts "#{key}"
     print_hash_array value
   else
-    puts "#{key}"
     puts "  #{value}"
   end
 end
