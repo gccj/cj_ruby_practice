@@ -1,4 +1,4 @@
-hash_object = eval ARGV[0].gsub(/:/, '=>')
+hash_object = eval ARGV[0]
 
 def print_hash_array(hash_array)
   hash_array.each do |hash|
