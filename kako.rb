@@ -40,7 +40,6 @@ def need_space?
   number_of_space > 0
 end
 
-
 # 使用：「ruby kako.rb '8(())9()()()(rehgwerh)(erhyewrhw)()   ()' 2」でも処理する。
 
 text = ARGV[0].gsub(/[^\(\)]/, '') # 不正のアルファベット、数値とスペースなどを取り除く
@@ -66,4 +65,3 @@ text.chars do |char|
   puts "#{space * (@offset + set_space)}#{char}"
   @prechar = char
 end
- 
